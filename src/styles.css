@@ -636,7 +636,7 @@ tbody tr:last-child td {
   border: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1040px) {
   .form-layout {
     grid-template-columns: 1fr;
     gap: 22px;
@@ -693,44 +693,57 @@ tbody tr:last-child td {
     height: 38px;
   }
   .form-layout {
-    padding: 26px 0;
+    gap: 18px;
+    padding: 24px 0;
   }
   .intro h1 {
-    font-size: 37px;
-    letter-spacing: -1.7px;
+    font-size: clamp(31px, 8vw, 37px);
+    letter-spacing: -1.4px;
   }
   .intro > p {
     font-size: 14px;
   }
   .registration-card {
-    padding: 21px 17px;
+    padding: 20px 16px;
+  }
+  .card-title {
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
   }
   .card-title h2 {
-    font-size: 19px;
+    font-size: 18px;
+  }
+  .required-note {
+    flex: none;
+    padding-top: 3px;
   }
   .two-cols {
-    gap: 14px 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 13px;
+  }
+  .wide {
+    grid-column: auto;
+  }
+  .count-grid {
+    gap: 10px;
+  }
+  .counter {
+    min-width: 0;
+    padding-left: 10px;
+    font-size: 11px;
+  }
+  .counter > div {
+    gap: 8px;
+  }
+  .counter button {
+    width: 36px;
+    height: 36px;
   }
   .field input {
     height: 47px;
     padding: 0 10px;
     font-size: 14px;
-  }
-  .counter {
-    padding-left: 7px;
-  }
-  .counter > div {
-    gap: 4px;
-  }
-  .counter button {
-    width: 31px;
-    height: 34px;
-  }
-  .counter {
-    font-size: 10px;
-  }
-  .count-grid {
-    gap: 6px;
   }
   .privacy-note {
     margin-left: 0;
@@ -752,6 +765,8 @@ tbody tr:last-child td {
   }
   .dashboard-title {
     align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
   }
   .dashboard-title h1 {
     font-size: 32px;
@@ -794,6 +809,49 @@ tbody tr:last-child td {
   }
   .login-card {
     padding: 28px 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .visitor-shell {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+  .brand {
+    width: 110px;
+  }
+  .event-pill {
+    max-width: calc(100vw - 190px);
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  .topbar-actions {
+    gap: 4px;
+  }
+  .fullscreen-button {
+    width: 34px;
+    height: 34px;
+  }
+  .registration-card {
+    padding: 18px 13px;
+  }
+  .consent {
+    font-size: 10px;
+  }
+  .count-grid {
+    gap: 6px;
+  }
+  .counter {
+    padding-right: 4px;
+    padding-left: 7px;
+    font-size: 10px;
+  }
+  .counter > div {
+    gap: 4px;
+  }
+  .counter button {
+    width: 32px;
+    height: 34px;
   }
 }
 
