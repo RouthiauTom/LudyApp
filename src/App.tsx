@@ -483,7 +483,7 @@ export default function App() {
           <div className="intro">
             <span className="eyebrow">BIENVENUE CHEZ LUDYLAB</span>
             <h1>
-              On est ravis
+              On est ravis{" "}
               <br />
               de vous accueillir<span className="period">.</span>
             </h1>
